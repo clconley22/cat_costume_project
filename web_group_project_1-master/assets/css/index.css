@@ -2,10 +2,135 @@ body {
   margin: 0;
 }
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+.desktop {
+  display: none;
 }
 
-/* On devices wider than 940px */
+/* header stlyes*/
+
+nav.mobile {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  margin: .65rem;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.tagline {
+  position: absolute;
+  z-index: 1;
+  color: #eee;
+  font-family:'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  align-self: center;
+  line-height: 2.25rem;
+}
+
+.tagline p {
+  margin: 0;
+}
+
+.tagline p:first-of-type {
+  font-size: 1.25rem;
+  padding-left:.6rem;
+}
+
+.tagline p:last-of-type {
+  font-size: 1.25rem;
+  float: right;
+}
+
+.frontground {
+  position: absolute;
+  z-index: 1;
+  max-width: 400px;
+  width: 50%;
+}
+
+
+/*  (tablet) */
+@media(max-width: 450px){
+  .tagline{
+    font-size: 3.5rem;
+  }
+}
+
+@media(min-width: 451px){
+  .tagline{
+    font-size: 4.5rem;
+    line-height: 2.5rem;
+  }
+
+}
+
+@media(min-width: 660px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  nav.desktop {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin: .65rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav span {
+    margin: 0 10px 0 10px;
+  }
+
+  .nav-links{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  .frontground {
+    max-width: 400px;
+    width: 23%;
+  }
+}
+
+
+/* On devices wider than 940px (desktop) */
 @media(min-width: 940px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .tagline{
+    font-size: 6.5rem;
+    line-height: 3.5rem;
+  }
+  .tagline p:first-of-type {
+    font-size: 1.35rem;
+    padding-left:.6rem;
+  }
+
+  .tagline p:last-of-type {
+    font-size: 1.35rem;
+    float: right;
+  }
 }

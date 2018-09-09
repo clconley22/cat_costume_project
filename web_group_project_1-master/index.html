@@ -1,21 +1,46 @@
 <html>
   <head>
     <title>Kat's Constume Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700" rel="stylesheet">
     <link href="./assets/css/index.css" media="all" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        Kat's Costume Shop
-        About
-        Contact
+      <nav class="mobile">
+        <span>Kat's Costume Shop</span>
+      </nav>
+      <nav class="desktop">
+        <span>Kat's Costume Shop</span>
+        <div class="nav-links">
+          <span>About</span>
+          <span>Contact</span>
+        </div>
       </nav>
       <section>
-        <!--
-          Desktop and Mobile hero images should be displayed here.
-          Learn more about the term "hero image": https://en.wikipedia.org/wiki/Hero_image
-        -->
+        <div class="mobile">
+          <div class="hero">
+            <img class="background" src="assets/images/kats-hero-mobile-bg.jpg" alt="skyline">
+          <div class="tagline">
+            <p>FIND THE</p>
+            <p><em>PURRRRRRFECT</em></p>
+            <p>COSTUME</p>
+          </div>
+            <img class="frontground" src="assets/images/kats-hero-mobile.png" alt="cat in cape">
+          </div>
+        </div>
+        <div class="desktop">
+          <div class="hero">
+            <img class="background" src="assets/images/kats-hero-desktop-bg.jpg" alt="skyline">
+          <div class="tagline">
+            <p>FIND THE</p>
+            <p><em>PURRRRRRFECT</em></p>
+            <p>COSTUME</p>
+          </div>
+            <img class="frontground" src="assets/images/kats-hero-desktop.png" alt="cat in cape">
+          </div>
+        </div>
       </section>
     </header>
     <section>
