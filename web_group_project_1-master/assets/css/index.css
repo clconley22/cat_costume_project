@@ -163,6 +163,32 @@ nav.mobile {
     max-width: 400px;
     width: 23%;
   }
+}
+
+
+/* On devices wider than 940px (desktop) */
+@media(min-width: 940px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .tagline{
+    font-size: 6.5rem;
+    line-height: 3.5rem;
+  }
+  .tagline p:first-of-type {
+    font-size: 1.35rem;
+    padding-left:.6rem;
+  }
+
+  .tagline p:last-of-type {
+    font-size: 1.35rem;
+    float: right;
+  }
 
   .cat-info-container {
     display: flex;
@@ -215,30 +241,4 @@ nav.mobile {
     width: 90%;
   }
 
-}
-
-
-/* On devices wider than 940px (desktop) */
-@media(min-width: 940px) {
-  .desktop {
-    display: flex;
-  }
-
-  .mobile{
-    display: none;
-  }
-
-  .tagline{
-    font-size: 6.5rem;
-    line-height: 3.5rem;
-  }
-  .tagline p:first-of-type {
-    font-size: 1.35rem;
-    padding-left:.6rem;
-  }
-
-  .tagline p:last-of-type {
-    font-size: 1.35rem;
-    float: right;
-  }
 }
