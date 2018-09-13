@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .desktop {
@@ -9,7 +10,7 @@ body {
 /* header stlyes*/
 
 nav.mobile {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family:
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
@@ -32,7 +33,6 @@ nav.mobile {
   position: absolute;
   z-index: 1;
   color: #eee;
-  font-family:'PT Sans Narrow', sans-serif;
   font-weight: bold;
   align-self: center;
   line-height: 2.25rem;
@@ -59,6 +59,63 @@ nav.mobile {
   width: 50%;
 }
 
+/*main section styles*/
+.cat-info-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cat-info-container p {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 1.25rem;
+  padding: 0 1.5rem;
+  line-height: 2.25rem;
+}
+
+.kat p{
+  margin-bottom: 0px;
+}
+
+.mavis h2{
+  margin-top: 0px;
+}
+
+.kat,
+.mavis {
+  background-color: #F0F0F0;
+}
+
+.kat h2,
+.mavis h2 {
+  padding-top: 2rem;
+  margin-bottom: 0;
+  color: #00897f;
+}
+
+.kat p,
+.mavis p {
+  margin-top: .5rem;
+}
+
+.mavis p {
+  padding-bottom: 2rem;
+  margin-bottom: 0px;
+}
+
+.cool-cat,
+.beach-cat {
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.image-container img {
+  border-radius: 50%;
+}
 
 /*  (tablet) */
 @media(max-width: 450px){
@@ -72,7 +129,6 @@ nav.mobile {
     font-size: 4.5rem;
     line-height: 2.5rem;
   }
-
 }
 
 @media(min-width: 660px) {
@@ -107,6 +163,58 @@ nav.mobile {
     max-width: 400px;
     width: 23%;
   }
+
+  .cat-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .kat {
+    margin-right: 10%;
+  }
+
+  .kat h2 {
+    margin-top: 0px;
+  }
+
+  .kat p {
+    margin-bottom: 1.8rem;
+  }
+
+  .mavis p {
+    padding-bottom: 0px;
+  }
+
+  .kat,
+  .mavis {
+    width: 45%;
+  }
+
+  .image-container {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  .cool-cat,
+  .beach-cat {
+    display: block;
+  }
+
+  .beach-cat {
+    margin: 0px 10% 0 10%;
+  }
+
+  .image-container img {
+    max-width: 250px;
+    width: 90%;
+  }
+
 }
 
 
