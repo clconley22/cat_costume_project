@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.desktop {
+  display: none;
+}
+
+/* header stlyes*/
+
+nav.mobile {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  margin: .65rem;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.tagline {
+  position: absolute;
+  z-index: 1;
+  color: #eee;
+  font-weight: bold;
+  align-self: center;
+  line-height: 2.25rem;
+}
+
+.tagline p {
+  margin: 0;
+}
+
+.tagline p:first-of-type {
+  font-size: 1.25rem;
+  padding-left:.6rem;
+}
+
+.tagline p:last-of-type {
+  font-size: 1.25rem;
+  float: right;
+}
+
+.frontground {
+  position: absolute;
+  z-index: 1;
+  max-width: 400px;
+  width: 50%;
+}
+
+/*main section styles*/
+.cat-info-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cat-info-container p {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 1.25rem;
+  padding: 0 1.5rem;
+  line-height: 2.25rem;
+}
+
+.kat p{
+  margin-bottom: 0px;
+}
+
+.mavis h2{
+  margin-top: 0px;
+}
+
+.kat,
+.mavis {
+  background-color: #F0F0F0;
+}
+
+.kat h2,
+.mavis h2 {
+  padding-top: 2rem;
+  margin-bottom: 0;
+  color: #00897f;
+}
+
+.kat p,
+.mavis p {
+  margin-top: .5rem;
+}
+
+.mavis p {
+  padding-bottom: 2rem;
+  margin-bottom: 0px;
+}
+
+.cool-cat,
+.beach-cat {
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.image-container img {
+  border-radius: 50%;
+}
+
+/*business infor section*/
+.bus-info {
+  background-color: #F0F0F0;
+  padding: 1rem 10% 1rem 15%;
+}
+
+.title {
+  display: none;
+}
+
+.hours h2,
+.contact h2 {
+  color: #00897f;
+  text-align: center;
+}
+
+.bus-info p {
+  font-family: 'PT Serif', sans-serif;
+  letter-spacing: 1px;
+  padding: 0 .2rem 0 .2rem;
+}
+
+.address {
+  display: flex;
+}
+
+
+.location img {
+  width: 100%;
+}
+
+/*footer*/
+footer {
+  background-color: #00897f;
+  height:5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+/*  (tablet) */
+@media(max-width: 450px){
+  .tagline{
+    font-size: 3.5rem;
+  }
+}
+
+@media(min-width: 451px){
+  .tagline{
+    font-size: 4.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media(min-width: 660px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  nav.desktop {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin: .65rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav span {
+    margin: 0 10px 0 10px;
+  }
+
+  .nav-links{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  .frontground {
+    max-width: 400px;
+    width: 23%;
+  }
+}
+
+
+/* On devices wider than 940px (desktop) */
+@media(min-width: 940px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .tagline{
+    font-size: 6.5rem;
+    line-height: 3.5rem;
+  }
+  .tagline p:first-of-type {
+    font-size: 1.35rem;
+    padding-left:.6rem;
+  }
+
+  .tagline p:last-of-type {
+    font-size: 1.35rem;
+    float: right;
+  }
+
+  .cat-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .kat {
+    margin-right: 10%;
+  }
+
+  .kat h2 {
+    margin-top: 0px;
+  }
+
+  .kat p {
+    margin-bottom: 1.8rem;
+  }
+
+  .mavis p {
+    padding-bottom: 0px;
+  }
+
+  .kat,
+  .mavis {
+    width: 45%;
+  }
+
+  .image-container {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  .cool-cat,
+  .beach-cat {
+    display: block;
+  }
+
+  .beach-cat {
+    margin: 0px 10% 0 10%;
+  }
+
+  .image-container img {
+    max-width: 250px;
+    width: 90%;
+  }
+
+  .bus-info {
+    display: flex;
+  }
+
+  .hours,
+  .contact {
+    background-color: white;
+    margin: 0 5% 0 0;
+    width: 40%;
+    padding: 1rem;
+  }
+
+  .title {
+    display: flex;
+    color: black;
+    background-color: #F0F0F0;
+    margin: 0;
+    padding-top: 1rem;
+    justify-content: center;
+  }
+
+}
